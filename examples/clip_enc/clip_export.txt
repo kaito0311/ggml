@@ -1,0 +1,304 @@
+[INFO] Processing variable:  class_embedding  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  positional_embedding  with shape  torch.Size([50, 768])  and type:  torch.float32
+ New shape:  (50, 768)
+[INFO] Processing variable:  proj  with shape  torch.Size([768, 512])  and type:  torch.float16
+ New shape:  (768, 512)
+[INFO] Processing variable:  conv1.weight  with shape  torch.Size([768, 3, 32, 32])  and type:  torch.float16
+ New shape:  (768, 3, 32, 32)
+[INFO] Processing variable:  ln_pre.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  ln_pre.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.0.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.0.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.0.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.0.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.0.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.0.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.0.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.0.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.0.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.0.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.0.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.0.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.1.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.1.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.1.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.1.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.1.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.1.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.1.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.1.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.1.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.1.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.1.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.1.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.2.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.2.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.2.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.2.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.2.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.2.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.2.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.2.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.2.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.2.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.2.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.2.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.3.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.3.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.3.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.3.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.3.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.3.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.3.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.3.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.3.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.3.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.3.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.3.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.4.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.4.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.4.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.4.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.4.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.4.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.4.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.4.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.4.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.4.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.4.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.4.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.5.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.5.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.5.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.5.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.5.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.5.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.5.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.5.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.5.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.5.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.5.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.5.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.6.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.6.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.6.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.6.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.6.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.6.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.6.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.6.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.6.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.6.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.6.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.6.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.7.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.7.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.7.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.7.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.7.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.7.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.7.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.7.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.7.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.7.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.7.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.7.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.8.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.8.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.8.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.8.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.8.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.8.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.8.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.8.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.8.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16     
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.8.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.8.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.8.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.9.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16   
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.9.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.9.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.9.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.9.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.9.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.9.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16       
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.9.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.9.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.9.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.9.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.9.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.10.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16  
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.10.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.10.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.10.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.10.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.10.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.10.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16      
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.10.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.10.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16    
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.10.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.10.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.10.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.11.attn.in_proj_weight  with shape  torch.Size([2304, 768])  and type:  torch.float16  
+ New shape:  (2304, 768)
+[INFO] Processing variable:  transformer.resblocks.11.attn.in_proj_bias  with shape  torch.Size([2304])  and type:  torch.float16
+ New shape:  (2304,)
+[INFO] Processing variable:  transformer.resblocks.11.attn.out_proj.weight  with shape  torch.Size([768, 768])  and type:  torch.float16
+ New shape:  (768, 768)
+[INFO] Processing variable:  transformer.resblocks.11.attn.out_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.11.ln_1.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.11.ln_1.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.11.mlp.c_fc.weight  with shape  torch.Size([3072, 768])  and type:  torch.float16      
+ New shape:  (3072, 768)
+[INFO] Processing variable:  transformer.resblocks.11.mlp.c_fc.bias  with shape  torch.Size([3072])  and type:  torch.float16
+ New shape:  (3072,)
+[INFO] Processing variable:  transformer.resblocks.11.mlp.c_proj.weight  with shape  torch.Size([768, 3072])  and type:  torch.float16
+ New shape:  (768, 3072)
+[INFO] Processing variable:  transformer.resblocks.11.mlp.c_proj.bias  with shape  torch.Size([768])  and type:  torch.float16
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.11.ln_2.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  transformer.resblocks.11.ln_2.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  ln_post.weight  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
+[INFO] Processing variable:  ln_post.bias  with shape  torch.Size([768])  and type:  torch.float32
+ New shape:  (768,)
