@@ -573,6 +573,8 @@ struct clip_state
 
     struct ggml_context *ctx;
 
+    std::vector<uint8_t> work_buffer;
+
     std::vector<uint8_t> buf_compute_img_enc;
 
     ggml_gallocr_t allocr = {};
@@ -621,9 +623,6 @@ struct ggml_cgraph * visual_clip_encode_image(
     ggml_set_name(input, "inp");
     ggml_set_input(input);
 
-    printf(" %d %d %d \n", input->ne[0], input->ne[1], input->ne[2]);
-    printf(" %d %d %d \n", visual_enc.conv1_w->ne[0], visual_enc.conv1_w->ne[1], visual_enc.conv1_w->ne[2]);
-
     // x shape : [B, C, 32, 32]
     struct ggml_tensor * x = ggml_conv_2d(
         ctx0,
@@ -652,7 +651,6 @@ struct ggml_cgraph * visual_clip_encode_image(
     // norm
     x = ggml_add_inplace(ctx0, ggml_mul(ctx0, x, visual_enc.ln_pre_w), visual_enc.ln_pre_b);
 
-    printf(" %d %d %d \n", x->ne[0], x->ne[1], x->ne[2]);
 
     // transformer
 
@@ -707,9 +705,9 @@ struct ggml_cgraph * visual_clip_encode_image(
             x = ggml_mul_mat(ctx0, layer.attn.c_attn_proj_w, x);
             x = ggml_add_inplace(ctx0, x, layer.attn.c_attn_proj_b);
 
-            // x = ggml_add_inplace(ctx0, ori_x, x);
+            x = ggml_add_inplace(ctx0, ori_x, x);
 
-            // ori_x = x; // keep the
+            ori_x = x; // keep the
 
             x = ggml_mul(ctx0, x, layer.ln_2_w);
             x = ggml_add_inplace(ctx0, x, layer.ln_2_b);
@@ -727,9 +725,12 @@ struct ggml_cgraph * visual_clip_encode_image(
     }
 
 
-
-
+    x = ggml_mul(ctx0, x, model.visual_enc.ln_post_w);
+    x = ggml_add_inplace(ctx0, x, model.visual_enc.ln_post_b);
+    
     x = ggml_cpy(ctx0, x, state.embed_img);
+
+    printf(" %ld %ld %ld \n", x->ne[0], x->ne[1], x->ne[2]);
 
     ggml_build_forward_expand(gf, x);
     ggml_disconnect_node_from_graph(state.embed_img);
@@ -824,6 +825,18 @@ bool image_preprocess(const image_u8 & img, image_f32 & res) {
 }
 
 
+static void ggml_graph_compute_helper(std::vector<uint8_t> & buf, ggml_cgraph * graph, int n_threads) {
+    struct ggml_cplan plan = ggml_graph_plan(graph, n_threads, nullptr);
+
+    if (plan.work_size > 0) {
+        buf.resize(plan.work_size);
+        plan.work_data = buf.data();
+    }
+
+    ggml_graph_compute(graph, &plan);
+};
+
+
 int main(int argc, char **argv)
 {
     const int64_t t_main_start_us = ggml_time_us();
@@ -899,5 +912,13 @@ int main(int argc, char **argv)
             fprintf(stderr, "%s: failed to encode image\n", __func__);
             return 1;
         }
+        ggml_graph_compute_helper(state.work_buffer, gf, params.n_threads);
+
+        print_t_f32("embd_img", state.embed_img);
+
+        ggml_gallocr_free(state.allocr);
+        state.allocr = NULL;
+        state.work_buffer.clear();
+
     }
 }
